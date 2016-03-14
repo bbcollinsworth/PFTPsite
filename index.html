@@ -39,6 +39,10 @@
       background: radial-gradient(rgba(0,0,0,0.2),rgba(0,0,0,1.0)), url("images/PastPack.jpg") top center no-repeat;
       background-size: cover;
    }
+   #background.reading {
+      background: radial-gradient(rgba(0,0,0,0.2),rgba(0,0,0,1.0)), url("images/Reading.jpg") top center no-repeat;
+      background-size: cover;
+   }
    #container{
 
     font-family: 'Oswald', sans-serif;
@@ -146,40 +150,7 @@
       <div id="footer"></div>
    </div>
    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-   <script>
-   var taglines = [
-   "History lives on your doorstep.",
-   "History: This time it's personal.",
-   "Solve their stories."
-   ];
-
-   var bgs = [
-   "past-pack",
-   "old-photos",
-   "rome",
-   "pirates"
-   ];
-
-   Array.prototype.randomPick = function(){
-      return this[Math.floor(Math.random()*this.length)];
-   }
-   // Math.randomIndex = function(array){
-   //    return Math.floor(Math.random()*array.length);
-   // }
-
-   var changeItUp = function(){
-
-      var pickedTag = taglines.randomPick();//taglines[Math.randomIndex(taglines)];
-      var pickedPic = bgs.randomPick();//[Math.randomIndex(bgs)];
-      $("#intro-text").find('h2').text(pickedTag);
-      $("#background").addClass(pickedPic);
-      console.log("Tagline set to: " + pickedTag);
-      console.log("BG set to: " + pickedPic);
-   };
-
-   changeItUp();
-
-
+   <script src="js/main.js">
    </script>
 </body>
 </html>
