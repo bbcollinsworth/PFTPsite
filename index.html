@@ -64,17 +64,17 @@
    }
 
    #header-img{
-    margin-top: 1em;
-    height: 10vh;
-    max-height: 100px;
-    border: 1px solid white;
- }
+      margin-top: 1em;
+      min-height: 10vh;
+      height: 100px;
+      border: 1px solid white;
+   }
 
- #intro-text{
-  margin-bottom: 2em;
-}
+   #intro-text{
+     margin-bottom: 2em;
+  }
 
-#intro-text h2{
+  #intro-text h2{
    font-size: 1.8em;
    font-family: 'Oswald',sans-serif;
    letter-spacing: 0.1em;
@@ -84,7 +84,7 @@
 
 #intro-text p{
    text-shadow: 0px 0px 0.5em #000000;
-   line-height: 1.3em;
+   line-height: 1.2em;
    letter-spacing: 0.5px;
    font-weight: 400;
    font-style: italic;
@@ -107,13 +107,13 @@
 
 #signup-field{
    max-width: 70%;
-   width: 300px;
+   width: 350px;
 }
 
 #signup-button {
    transition-duration: 0.75s;
    border: 2px solid white;
-       background-color: rgba(0,0,0,0.3);
+   background-color: rgba(0,0,0,0.3);
    color: white;
 
    text-transform: uppercase;
@@ -124,6 +124,14 @@
    /*text-shadow: 0px 0px 0.2em #FFFFFF;*/
    background-color: rgba(240,22,22,0.8);
    //font-weight: bold;
+}
+
+/*-------------------- MEDIA QUERIES --------------------*/
+@media only screen and (max-width: 750px){
+   #signup-field{
+      width: 90%;
+   }
+
 }
 
 </style>
