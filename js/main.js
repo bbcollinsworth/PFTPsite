@@ -33,7 +33,9 @@
     "rome",
     "pirates",
     "reading",
-    "inca"
+    "inca",
+    "box",
+    "civil-war"
   ];
 
   Array.prototype.randomPick = function() {
