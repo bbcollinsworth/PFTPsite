@@ -18,10 +18,13 @@
   };
 
   var taglines = [{
-    'h': "History lives on your doorstep."
+    'h': "History lives on your doorstep.",
+    't': "Discover stories of people from the past through monthly packages from another place and time."
   }, {
 
-    'h': "Solve their stories."
+    'h': "Solve their stories.",
+    't': "Discover the lives of people from the past through monthly packages from another place and time."
+
   }];
 
   var bgs = [
@@ -38,15 +41,16 @@
 
   var changeItUp = function() {
 
-    var pickedTag = taglines.randomPick().h;
+    var pickedTag = taglines.randomPick();
     var pickedPic = bgs.randomPick();
-    $("#intro-text").find('h2').text(pickedTag);
+    $("#intro-text").find('h2').text(pickedTag.h);
+    $("#intro-text").find('p').first().text(pickedTag.t);
     $("#background").addClass(pickedPic);
 
     console.log("Tagline set to: " + pickedTag);
     console.log("BG set to: " + pickedPic);
 
-    makeForm(pickedTag, pickedPic);
+    makeForm(pickedTag.h, pickedPic);
   };
 
   changeItUp();
