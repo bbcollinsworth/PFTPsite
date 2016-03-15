@@ -22,14 +22,13 @@
    <meta name="msapplication-TileColor" content="#ffffff">
    <meta name="msapplication-TileImage" content="images/favicons/ms-icon-144x144.png">
    <meta name="theme-color" content="#ffffff">
-   <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700|Abel|Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700|Vollkorn:400,400italic,700,700italic|Josefin+Slab:400,300,100,600,700,100italic,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700|Abel|Special+Elite|Roboto+Slab:100,300,400,700|Cutive+Mono|Slabo+13px|Vollkorn:400,400italic,700,700italic|Josefin+Slab:400,300,100,600,700,100italic,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
 
   <meta charset="utf-8" />
   <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
   <!--  <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700|Abel|Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700|Vollkorn:400,400italic,700,700italic|Josefin+Slab:400,300,100,600,700,100italic,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'> -->
 
-   <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
-   <link href='https://fonts.googleapis.com/css?family=Cutive+Mono' rel='stylesheet' type='text/css'>
+   <link rel="stylesheet" href="css/Webfonts/webfonts.css" type="text/css" charset="utf-8" />
 
    <style type="text/css">
 
@@ -101,29 +100,34 @@
    }
 
    #intro-text{
-    margin-bottom: 2em;
+    margin-bottom: 0.5em;
  }
 
  #intro-text h2{
    font-size: 1.8em;
    font-family: 'Oswald',sans-serif;
-     margin-bottom: 1em;
+     margin-bottom: 0.5em;
    letter-spacing: 0.1em;
    text-transform: uppercase;
    font-weight: 300;
 }
 
 #intro-text p{
-   text-shadow: 0px 0px 0.5em #000000;
-   line-height: 1.1em;
-   letter-spacing: 0.5px;
-   font-weight: 400;
-   font-size: 0.9em;
-   /*font-style: italic;*/
-   /*font-family: 'Josefin Slab','Open Sans',sans-serif;*/
-   font-family: 'Cutive Mono','Josefin Slab','Courier',sans-serif;
-   width: 70vw;
-   margin: auto;
+   text-shadow: 0px 0px 0.7em #000000;
+    line-height: 1.4em;
+    padding-bottom: 1em;
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-size: 1em;
+    /* font-style: italic; */
+    font-family: 'Special Elite','Roboto Slab','Josefin Slab','Courier',sans-serif;
+    width: 70vw;
+    margin: auto;
+}
+
+#intro-text p:last-child{
+   padding-top: 1.5em;
+   padding-bottom: 0em;
 }
 
 #signup-container input{
@@ -203,9 +207,8 @@
             <p>
                Discover stories of people from the past through monthly packages from another place and time.
             </p>
-            <br><br><br><br><br><br>
             <p>
-               We're looking for people to test our product! Sign up below for our upcoming private beta.
+               Sign up for our upcoming private beta test:
             </p>
          </div>
          <form id="signup-container" action="" method="POST" target="no-target">
