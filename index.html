@@ -2,6 +2,7 @@
 <html>
 <head>
    <title>Post from the Past</title>
+
    <meta charset="utf-8" />
    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
    <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-icon-57x57.png">
@@ -22,7 +23,16 @@
    <meta name="msapplication-TileImage" content="images/favicons/ms-icon-144x144.png">
    <meta name="theme-color" content="#ffffff">
    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700|Abel|Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700|Vollkorn:400,400italic,700,700italic|Josefin+Slab:400,300,100,600,700,100italic,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+  <!--  <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700|Abel|Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700|Vollkorn:400,400italic,700,700italic|Josefin+Slab:400,300,100,600,700,100italic,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'> -->
+
+   <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+   <link href='https://fonts.googleapis.com/css?family=Cutive+Mono' rel='stylesheet' type='text/css'>
+
    <style type="text/css">
+
    body {
       background-color: black;
       margin: 0px;
@@ -97,6 +107,7 @@
  #intro-text h2{
    font-size: 1.8em;
    font-family: 'Oswald',sans-serif;
+     margin-bottom: 1em;
    letter-spacing: 0.1em;
    text-transform: uppercase;
    font-weight: 300;
@@ -104,12 +115,15 @@
 
 #intro-text p{
    text-shadow: 0px 0px 0.5em #000000;
-   line-height: 1.2em;
+   line-height: 1.1em;
    letter-spacing: 0.5px;
    font-weight: 400;
-   font-size: 1em;
-   font-style: italic;
-   font-family: 'Josefin Slab','Open Sans',sans-serif;
+   font-size: 0.9em;
+   /*font-style: italic;*/
+   /*font-family: 'Josefin Slab','Open Sans',sans-serif;*/
+   font-family: 'Cutive Mono','Josefin Slab','Courier',sans-serif;
+   width: 70vw;
+   margin: auto;
 }
 
 #signup-container input{
@@ -177,9 +191,9 @@
    }
 
 }
-
 </style>
 </head>
+
 <body>
    <div id="background"></div>
    <div id="container">
@@ -189,18 +203,20 @@
             <p>
                Discover stories of people from the past through monthly packages from another place and time.
             </p>
+            <br><br><br><br><br><br>
             <p>
                We're looking for people to test our product! Sign up below for our upcoming private beta.
             </p>
          </div>
-         <div id="signup-container">
+         <form id="signup-container" action="" method="POST" target="no-target">
             <input id="signup-field" type="text" placeholder="Your email address*">
             <input id="signup-button" type="submit" value="sign up">
             <p>* We will not share or sell your email.</p>
-         </div>
+         </form>
       </div>
       <div id="footer"></div>
    </div>
+   <iframe src="#" id="no-target" name="no-target" style="visibility:hidden"></iframe>
    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
    <script src="js/main.js">
    </script>
