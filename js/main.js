@@ -32,7 +32,8 @@
     "old-photos",
     "rome",
     "pirates",
-    "reading"
+    "reading",
+    "inca"
   ];
 
   Array.prototype.randomPick = function() {

@@ -1,0 +1,167 @@
+   body {
+    background-color: black;
+    margin: 0px;
+  }
+  #background{
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -100;
+    overflow: hidden;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    margin: auto; 
+    -webkit-filter: sepia(80%) opacity(0.7) blur(2px);
+    filter: sepia(80%) opacity(0.6) blur(2px);
+  }
+
+  #background.pirates {
+    background: radial-gradient(rgba(0,0,0,0.2),rgba(0,0,0,1.0)), url("images/PBackdrop.jpg") top center no-repeat;
+    background-size: cover;
+  }
+  #background.rome {
+    background: radial-gradient(rgba(0,0,0,0.2),rgba(0,0,0,1.0)), url("images/Rome.jpg") top center no-repeat;
+    background-size: cover;
+  }
+  #background.old-photos {
+    background: radial-gradient(rgba(0,0,0,0.2),rgba(0,0,0,1.0)), url("images/OldPhotos.jpg") top center no-repeat;
+    background-size: cover;
+  }
+  #background.past-pack {
+    background: radial-gradient(rgba(0,0,0,0.2),rgba(0,0,0,1.0)), url("images/PastPack.jpg") top center no-repeat;
+    background-size: cover;
+  }
+  #background.reading {
+    background: radial-gradient(rgba(0,0,0,0.2),rgba(0,0,0,1.0)), url("images/Reading.jpg") top center no-repeat;
+    background-size: cover;
+  }
+  #background.inca {
+    background: radial-gradient(rgba(0,0,0,0.2),rgba(0,0,0,1.0)), url("images/Inca.jpg") top center no-repeat;
+    background-size: cover;
+  }
+  #container{
+
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+
+    font-size: 1.5em;
+      /*transform-origin: top;
+      transform: scale(1);*/
+      max-width: 100%;
+      padding: 1em 5%;
+      margin: auto;
+      /*background-color: black;*/
+      color: rgba(255,255,255,1.0);
+      /*text-shadow: 0px 0px 0.2em #9FF4FF;*/
+    }
+
+    #header{
+
+    }
+
+    #header-img{
+      margin-top: 1em;
+      max-height: 10vh;
+      height: 90px;
+      border: 1px solid white;
+    }
+
+    #intro-text{
+     margin-bottom: 0.6em;
+   }
+
+   #intro-text h2{
+     font-size: 1.8em;
+     font-family: 'Oswald',sans-serif;
+     margin-bottom: 0.5em;
+     letter-spacing: 0.1em;
+     text-transform: uppercase;
+     font-weight: 300;
+   }
+
+   #intro-text p{
+    line-height: 1.3em;
+    padding-bottom: 1em;
+    /*letter-spacing: 0.5px;*/
+    font-weight: 300;
+    text-shadow: 0px 0px 0.7em #000000;
+    font-size: 1em;
+    /* font-style: italic; */
+    font-family: 'Inconsolata','Special Elite','Roboto Slab','Josefin Slab','Courier',sans-serif;
+    width: 70vw;
+    margin: auto;
+  }
+
+  #intro-text p:last-child{
+   padding-top: 1.2em;
+   padding-bottom: 0em;
+ }
+
+ #signup-container input{
+   font-family: 'Abel',sans-serif;
+   letter-spacing: 0.2em;
+   font-size: 0.9em;
+   padding: 0.8em 1.0em;
+   margin: 0.5em 1em;
+ }
+
+ #signup-container p{
+   font-family: 'Abel','Josefin Slab',sans-serif;
+   font-weight: 100;
+   font-size: 0.7em;
+ }
+
+ #signup-field{
+   /*max-width: 70%;*/
+   /*width: 350px;*/
+   width: 18em;
+ }
+
+ #signup-button {
+   transition-duration: 0.75s;
+   border: 2px solid white;
+   background-color: rgba(0,0,0,0.3);
+   color: white;
+
+   text-transform: uppercase;
+ }
+
+ #signup-button:hover {
+   cursor: pointer;
+   /*text-shadow: 0px 0px 0.2em #FFFFFF;*/
+   background-color: rgba(240,22,22,0.8);
+   //font-weight: bold;
+ }
+
+ /*-------------------- MEDIA QUERIES --------------------*/
+ @media only screen and (max-width: 800px){
+
+   #header-img{
+    margin-top: 0.25em;
+  }
+
+  #intro-text {
+    margin-bottom: 1em;
+  }
+
+  #intro-text h2{
+    font-size: 1.2em;
+  }
+
+  #intro-text p{
+    font-size: 0.8em;
+  }
+
+  #signup-field{
+    width: 80%;
+    /*max-width: 90%;*/
+  }
+
+  #signup-container input{
+    margin: 0.5em auto;
+  }
+
+}
