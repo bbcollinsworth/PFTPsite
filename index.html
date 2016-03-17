@@ -29,34 +29,49 @@
 
    <link rel="stylesheet" href="css/Webfonts/webfonts.css" type="text/css" charset="utf-8" />
    <link rel="stylesheet" href="css/mainstyle.css" type="text/css" />
+   <!-- Facebook Pixel Code -->
+   <script>
+   !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+         document,'script','//connect.facebook.net/en_US/fbevents.js');
 
+      fbq('init', '1546600152336793');
+      fbq('track', "PageView");</script>
+      <noscript><img height="1" width="1" style="display:none"
+         src="https://www.facebook.com/tr?id=1546600152336793&ev=PageView&noscript=1"
+         />
+      </noscript>
+      <!-- End Facebook Pixel Code -->
 
-</head>
+   </head>
 
-<body>
-   <div id="background"></div>
-   <div id="container">
-      <div id="header"><img id="header-img" src="css/images/logo-small.png"></div>
-      <div id="main">
-         <div id="intro-text"><h2>History lives on your doorstep.</h2>
-            <p>
-               Discover stories of people from the past through monthly packages from another place and time.
-            </p>
-            <p>
-               Sign up for our upcoming private beta test:
-            </p>
+   <body>
+      <div id="background"></div>
+      <div id="container">
+         <div id="header"><img id="header-img" src="css/images/logo-small.png"></div>
+         <div id="main">
+            <div id="intro-text"><h2>History lives on your doorstep.</h2>
+               <p id="tagline-body">
+                  Discover stories of people from the past through monthly packages from another place and time.
+               </p>
+               <p>
+                  Sign up for our upcoming private beta test:
+               </p>
+            </div>
+            <form id="signup-container" action="" method="POST" target="no-target">
+               <input id="signup-field" type="text" placeholder="Your email address*">
+               <input id="signup-button" type="submit" value="sign up">
+               <p>* We will not share or sell your email.</p>
+            </form>
          </div>
-         <form id="signup-container" action="" method="POST" target="no-target">
-            <input id="signup-field" type="text" placeholder="Your email address*">
-            <input id="signup-button" type="submit" value="sign up">
-            <p>* We will not share or sell your email.</p>
-         </form>
+         <div id="footer"></div>
       </div>
-      <div id="footer"></div>
-   </div>
-   <iframe src="#" id="no-target" name="no-target" style="visibility:hidden"></iframe>
-   <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-   <script src="js/main.js">
-   </script>
-</body>
-</html>
+      <iframe src="#" id="no-target" name="no-target" style="visibility:hidden"></iframe>
+      <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script src="js/main.js">
+      </script>
+      <script src="js/googleAnalytics.js"></script>
+   </body>
+   </html>

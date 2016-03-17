@@ -47,7 +47,8 @@
     var pickedTag = taglines.randomPick();
     var pickedPic = bgs.randomPick();
     $("#intro-text").find('h2').text(pickedTag.h);
-    $("#intro-text").find('p').first().text(pickedTag.t);
+    $("#tagline-body").text(pickedTag.t);
+
     $("#background").addClass(pickedPic);
 
     console.log("Tagline set to: " + pickedTag);
@@ -55,7 +56,9 @@
 
     makeForm(pickedTag.h, pickedPic);
   };
-
-  changeItUp();
+  
+  $(document).ready(function() {
+    changeItUp();
+  });
 
 })();
