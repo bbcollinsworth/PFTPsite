@@ -4,7 +4,7 @@
     $('#signup-container').one('submit', function() {
       var inputEmail = encodeURIComponent($('#signup-field').val());
       var baseURL = 'https://docs.google.com/forms/d/1_VKPGtjca8RbKaJ_RZG5Ixs_ry7_REER_tKB7poYrw8/formResponse?';
-      var emailEntry = 'entry.924917837'
+      var emailEntry = 'entry.924917837';
       var tagEntry = 'entry.646248454';
       var picEntry = 'entry.1114145375';
       var submitRef = '&submit=Submit';
@@ -13,7 +13,21 @@
       console.log(submitURL);
       $(this)[0].action = submitURL;
       $('#signup-field').addClass('active').val('');
-      alert('Thank you for signing up to be a beta tester! We\'ll be in touch shortly.');
+
+      var renderThanks = function() {
+        var hide = function(element) {
+          $(element).css({
+            'display': 'none'
+          });
+        }
+        hide('#signup-container');
+
+        $('#intro-text').html('<h2 class="thankYou">Thanks!</h2><p>We\'ll keep you posted about the beta launch.</p>');
+        //hide('p');
+      };
+
+      renderThanks();
+      //alert('Thank you for signing up to be a beta tester! We\'ll be in touch shortly.');
     });
   };
 
@@ -42,6 +56,21 @@
     return this[Math.floor(Math.random() * this.length)];
   };
 
+  //   $('#signup-button').on('click', function() {
+
+  //     var renderThanks = function(){
+  //     var hide = function(element){
+  //       $(element).css({
+  //       'display': 'none'
+  //     });
+  //     }
+  //     hide('#signup-container');
+
+  //     $('#intro-text').html('<h2>Thanks!</h2>');
+  //     //hide('p');
+  // };
+  //   });
+
   var changeItUp = function() {
 
     var pickedTag = taglines.randomPick();
@@ -56,9 +85,9 @@
 
     makeForm(pickedTag.h, pickedPic);
   };
-  
-  $(document).ready(function() {
-    changeItUp();
-  });
+
+  //$(document).ready(function() {
+  changeItUp();
+  //});
 
 })();
